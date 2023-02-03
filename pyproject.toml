@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "whisper-voice-assistant"
+version = "0.1.0"
+description = ""
+authors = ["Andy Garbett <atgarbett@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.8.13,<3.12"
+pyaudio = "^0.2.13"
+openai-whisper = "^20230117"
+numpy = "^1.24.1"
+pvporcupine = "^2.1.4"
+pvrecorder = "^1.1.1"
+scipy = "^1.10.0"
+torch = "^1.13.1"
+torchaudio = "^0.13.1"
+pvcobra = "^1.2.0"
+python-dotenv = "^0.21.1"
+
+[tool.poetry.group.dev.dependencies]
+black = {version = "^23.1.0", allow-prereleases = true}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
